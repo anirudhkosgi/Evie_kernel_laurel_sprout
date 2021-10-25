@@ -3,7 +3,7 @@ BRANCH=ruby-arrow
 CROSS_COMPILE=aarch64-linux-android-
 CROSS_COMPILE_ARM32=arm-linux-androideabi-
 CC=clang
-LD=ld.lld
+LD=ld
 CLANG_TRIPLE=aarch64-linux-gnu-
 DEFCONFIG=vendor/trinket-perf_defconfig
 EXTRA_CMDS=''
@@ -27,3 +27,4 @@ vmlinux
 System.map
 .config
 "
+KERNEL_DIR=private/laurel
