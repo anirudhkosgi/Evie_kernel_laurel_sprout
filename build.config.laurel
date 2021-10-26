@@ -3,7 +3,7 @@ BRANCH=ruby-arrow
 CROSS_COMPILE=aarch64-linux-android-
 CROSS_COMPILE_ARM32=arm-linux-androideabi-
 CC=clang
-LD=ld
+LD=ld.lld
 CLANG_TRIPLE=aarch64-linux-gnu-
 DEFCONFIG=vendor/trinket-perf_defconfig
 EXTRA_CMDS=''
@@ -23,8 +23,6 @@ FILES="
 arch/arm64/boot/dtbo.img
 arch/arm64/boot/Image.gz-dtb
 arch/arm64/boot/Image.gz
-vmlinux
-System.map
-.config
+arch/arm64/boot/dts/qcom/trinket.dtb
 "
 KERNEL_DIR=private/laurel
